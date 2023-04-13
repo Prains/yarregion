@@ -1,11 +1,12 @@
-import './App.css'
+import Button from "../Button/Button";
+import style from "./App.module.css";
 
 function App() {
-
   return (
-    <div className="App">
+    <div className={style.app}>
+      <Button>123</Button>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
