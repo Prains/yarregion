@@ -1,13 +1,7 @@
-import './App.css'
-import Result from "../Result/Result.jsx";
+import "./App.css";
 
 function App() {
-
-  return (
-    <div className="App">
-      <Result />
-    </div>
-  )
+  return <div className="App"></div>;
 }
 
-export default App
+export default App;
