@@ -1,37 +1,36 @@
 import styles from "./Footer.module.css";
-import Logo from "../../../images/Footer/Logo.svg";
+import { FooterLinks } from "./FooterLinks/FooterLinks";
+import FooterLogo from "./FooterLogo";
 
-function Footer(props) {
+function Footer({owner}) {
+  const FooterText1 = {
+    links1: 'О регионе',
+    links2: 'Предпринимателю',
+    links3: 'Инвестору',
+    links4: 'Для НКО'
+  }
+  const FooterText2 = {
+    links1: 'Начинающему предпринимателю',
+    links2: 'Инвестиционная карта',
+    links3: 'Туристу',
+    links4: 'Торги'
+  }
   return (
     <div className={styles.footer}>
       <div className={styles.footer__content}>
-        <div className={styles.Logo}>
-          <a href="/">
-            <img className={styles.footer_Logo} src={Logo} alt="Logo" />
-          </a>
-        </div>
+        <FooterLogo />
         <div className={styles.footer__info}>
           <p>Представительство Ярославской области</p>
-          <p>{props.owner.address}</p>
-          <p>{props.owner.phone}</p>
+          <p>{owner.address}</p>
+          <p>{owner.phone}</p>
           <div className={styles.footer__info_EmailAddress}>
-            <p>{props.owner.email}</p>
+            <p>{owner.email}</p>
           </div>
         </div>
         <div className={styles.footer_links}>
-          <div className={styles.footer_links__grid}>
-            <div className={styles.footer_links__grid_left}>
-              <a href="#">О регионе</a>
-              <a href="#">Предпринимателю</a>
-              <a href="#">Инвестору</a>
-              <a href="#">Для НКО</a>
-            </div>
-            <div className={styles.footer_links__grid_right}>
-              <a href="#">Начинающему предпринимателю</a>
-              <a href="#">Инвестиционная карта</a>
-              <a href="#">Туристу</a>
-              <a href="#">Торги</a>
-            </div>
+          <div className={styles.footer__grid_container}>
+            <FooterLinks FooterText={FooterText1}/>
+            <FooterLinks FooterText={FooterText2}/>
           </div>
         </div>
       </div>

@@ -1,0 +1,5 @@
+
+.links__grid_container {
+    display: grid;
+    gap: 24px;
+  }

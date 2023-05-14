@@ -23,17 +23,17 @@
   order: 0;
 }
 
-.footer_Logo {
-  width: 100%;
-}
-
-.Logo {
+.footer__logo {
   width: 98px;
   height: 140px;
   mix-blend-mode: darken;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.logo {
+  width: 100%;
 }
 
 .footer__info {
@@ -55,18 +55,8 @@
   margin-right: 54px;
 }
 
-.footer_links__grid {
+.footer__grid_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-}
-
-.footer_links__grid_left {
-  display: grid;
-  gap: 24px;
-}
-
-.footer_links__grid_right {
-  display: grid;
-  gap: 24px;
 }
