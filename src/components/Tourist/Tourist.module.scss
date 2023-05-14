@@ -1,0 +1,72 @@
+:root {
+  --swiper-navigation-color: #D9D9D9;
+  --swiper-navigation-top-offset: 40%;
+  --swiper-navigation-sides-offset: 0px;
+  --swiper-navigation-size: 40px;
+}
+.container {
+  margin: 12px auto 48px auto;
+  max-width: 1180px;
+}
+.title {
+  margin-top: 39px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #292929;
+}
+.mainContainer {
+  display: flex;
+  gap: 48px;
+}
+.textContainer {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.textBlock {
+
+  margin-top: 48px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  /* blacktext */
+
+  color: #292929;
+}
+.text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 877px;
+
+  /* blacktext */
+
+  color: #292929;
+}
+.subtitle {
+  margin-top: 24px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #292929;
+}
+
+.sliderText {
+  margin-top: 24px;
+}
+.touristImage {
+  margin-top: 104px;
+  position: absolute;
+  left: 0;
+
+}
