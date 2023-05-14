@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main {
+  position: absolute;
+  left: 50px;
+}
+
+.biggest {
+  display: flex;
+  margin-top: 48px;
+  gap: 107px;
+}
+
+.middle {
+  display: flex;
+  margin-top: 48px;
+  gap: 48px;
+}
+
+.lowest {
+  display: flex;
+  margin-top: 48px;
+  gap: 45px;
+}
+
+h1, h2, h3 {
+  width: 980px;
+  height: 88px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  color: #000;
+}
+
+h2, h3 {
+  margin-top: 96px;
+}/*# sourceMappingURL=Info.css.map */
