@@ -14,6 +14,70 @@ import {Navigation, Pagination} from "swiper";
 import {sliderImageOne, touristImage} from "../../images/Main/Tourist/index.js";
 
 const Tourist = () => {
+    const arrData = [
+        {
+            id: 14,
+            img: sliderImageOne,
+            text: 'textone'
+        },
+        {
+            id: 13,
+            img: sliderImageOne,
+            text: 'texttwo'
+        },
+        {
+            id: 10,
+            img: sliderImageOne,
+            text: 'textthree'
+        },
+        {
+            id: 11,
+            img: sliderImageOne,
+            text: 'textfour'
+        },
+        {
+            id: 1,
+            img: sliderImageOne,
+            text: 'textone'
+        },
+        {
+            id: 2,
+            img: sliderImageOne,
+            text: 'texttwo'
+        },
+        {
+            id: 3,
+            img: sliderImageOne,
+            text: 'textthree'
+        },
+        {
+            id: 4,
+            img: sliderImageOne,
+            text: 'textfour'
+        },
+        {
+            id: 5,
+            img: sliderImageOne,
+            text: 'textone'
+        },
+        {
+            id: 6,
+            img: sliderImageOne,
+            text: 'texttwo'
+        },
+        {
+            id: 7,
+            img: sliderImageOne,
+            text: 'textthree'
+        },
+        {
+            id: 8,
+            img: sliderImageOne,
+            text: 'textfour'
+        },
+
+    ]
+
     return (
         <section>
             <div className={styles.container}>
@@ -38,68 +102,15 @@ const Tourist = () => {
                                 modules={[Pagination, Navigation]}
                                 className="mySwiper"
                             >
-
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-                                <SwiperSlide>
-                                    <a href="#">
-                                        <img className={styles.sliderImage} src={sliderImageOne} alt="slider-image"/>
-                                        <p className={styles.sliderText}>text</p>
-                                    </a>
-                                </SwiperSlide>
-
+                                {
+                                    arrData.map(item =>
+                                        <SwiperSlide key={item.id}>
+                                            <a href="#">
+                                                <img className={styles.sliderImage} src={item.img} alt="slider-image"/>
+                                                <p className={styles.sliderText}>{item.text}</p>
+                                            </a>
+                                    </SwiperSlide>)
+                                }
                             </Swiper>
 
                         </div>
