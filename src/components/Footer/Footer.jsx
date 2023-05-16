@@ -1,6 +1,6 @@
 import styles from "./Footer.module.css";
 import { FooterLinks } from "./FooterLinks/FooterLinks";
-import FooterLogo from "./FooterLogo";
+import FooterLogo from "./FooterLogo/FooterLogo";
 
 function Footer({owner}) {
   
