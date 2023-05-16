@@ -1,0 +1,55 @@
+@mixin blocks ($width, $height) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: $width;
+    height: $height;
+
+    border: 1px solid #ffcc33;
+    border-radius: 10px;
+}
+
+@mixin paragraph($width, $height) {
+    max-width: $width;
+    max-height: $height;
+
+    margin-left: 12px;
+
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.big {
+    @include blocks(322px, 172px);
+
+    p {
+        @include paragraph(248px, 51px);
+    }
+}
+
+.medium {
+    @include blocks(259px, 172px);
+
+    p {
+        @include paragraph(217px, 51px);
+    }
+}
+
+.low {
+    @include blocks(200px, 150px);
+
+    p {
+        @include paragraph(147px, 51px);
+    }
+
+}
+
+.ellipse {
+    width: 16px;
+    height: 16px;
+    background: #ffcc33;
+    border-radius: 9px;
+}
