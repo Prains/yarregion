@@ -45,7 +45,7 @@ function Footer({owner}) {
           <p>Представительство Ярославской области</p>
           <p>{owner.address}</p>
           <p>{owner.phone}</p>
-          <a href='mailto:gubern@adm.yar.ru0'>{owner.email}</a>
+          <a href={`mailto:${owner.email}`}>{owner.email}</a>
         </div>
         <div className={styles.footer_links}>
           <nav className={styles.footer__grid_container}>

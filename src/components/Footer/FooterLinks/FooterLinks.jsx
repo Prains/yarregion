@@ -1,4 +1,4 @@
-import styles from "./Footer.module.css";
+import styles from './FooterLinks.module.css';
 
 export const FooterLinks = ({ FooterText }) => {
   return (
