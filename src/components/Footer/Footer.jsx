@@ -45,7 +45,7 @@ function Footer({owner}) {
           <p>Представительство Ярославской области</p>
           <p>{owner.address}</p>
           <p>{owner.phone}</p>
-            <p className={styles.footer__info_Email}>{owner.email}</p>
+          <p className={styles.footer__info_Email}><a href='mailto:{owner.email}'>{owner.email}</a></p>
         </div>
         <div className={styles.footer_links}>
           <nav className={styles.footer__grid_container}>
