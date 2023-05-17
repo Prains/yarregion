@@ -44,9 +44,10 @@
   gap: 16px;
 }
 
-.footer__info_Email {
+.footer__info a{
   text-decoration-line: underline;
 }
+
 
 .footer_links {
   font-weight: 400px;
