@@ -1,4 +1,5 @@
 import styles from './InfoItem.module.scss'
+
 function InfoItem({text, block}) {
   return (
     <div className={block}>
