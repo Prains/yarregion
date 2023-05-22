@@ -1,0 +1,37 @@
+.aboutInfo{
+	display: flex;
+	flex-direction: column;
+	gap:24px;
+	width: 550px;
+	position: sticky;
+	top: 70px;
+	max-height: 500px;
+}
+
+.img{
+	border-radius: 10px;
+
+}
+
+.p{
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+%btn{
+	width: 200px;
+	height: 40px;
+	background: #FFCC33;
+	border-radius: 10px;
+}
+
+.btn{
+	@extend %btn;
+}
+
+.btnHover{
+	@extend %btn;
+	border: 2px solid #FFCC33 ;
+	background-color: white;
+}

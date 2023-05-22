@@ -1,0 +1,19 @@
+.about{
+	font-family: "Montserrat", sans-serif;
+	padding-right: 58px;
+
+	.aboutTitle{
+		font-weight: 700;
+		font-size: 2.25rem;
+		margin-bottom: 48px;
+	}
+
+	.wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+	}
+
+}
+
