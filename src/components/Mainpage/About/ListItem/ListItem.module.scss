@@ -1,0 +1,44 @@
+$col: #ffcc33;
+$textCol:#292929;
+$fontStack: "Montserrat", sans-serif;
+
+.listItem {
+	display: flex;
+	justify-content: space-between;
+}
+
+.numBox {
+	background-color: $col;
+	width: 3.125rem;
+	height: 3.125rem;
+	text-align: center;
+	font-family: $fontStack;
+	font-weight: 700;
+	font-size: 1.5rem;
+	padding-top: 0.625rem;
+	padding-bottom: 0.625rem;
+	color: white;
+}
+
+.textBox{
+	width: 16.875rem;
+
+	.title{
+		color: $textCol;
+		font-family: $fontStack;
+		font-size: 1rem;
+		font-weight: 700;
+		line-height: 1.25rem;
+	}
+
+	.text{
+		color: $textCol;
+		font-family: $fontStack;
+		font-size: 0.875rem;
+		font-weight: 400;
+		line-height: 1.0625rem;
+	}
+
+}
+
+
