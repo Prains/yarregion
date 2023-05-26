@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+@mixin blocks($width, $height) {
+	display: flex;
+	justify-content: center;
+	max-width: $width;
+	height: $height;
+	margin-top: 12px;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+@mixin fonts($size, $weight, $line) {
+	font-size: $size;
+	font-weight: $weight;
+	line-height: $line;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contacts__block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin-left: 46px;
+	margin-top: 73px;
+	max-width: 380px;
+	height: 509px;
+
+	.images {
+		margin-top: 33px;
+		width: 232px;
+		height: 250px;
+		background: #A0A0A0;
+		border-radius: 10px;
+	}
+
+	.small {
+		@include blocks(157px, 32px)
+	}
+
+	.small:hover {
+		color: #E41E1E;
+	}
+
+	.big {
+		@include blocks(363px, 32px)
+	}
+
+	.big:hover {
+		color: #E41E1E;
+	}
+
+	h4 {
+		margin-top: 14px;
+		@include fonts(16px, 700, 20px)
+	}
+
+	button {
+		margin-top: 12px;
+		width: 277px;
+		height: 30px;
+		background-color: #FFCC33;
+		border-radius: 20px;
+
+		b {
+			@include fonts(16px, 500, 20px);
+			text-align: center;
+		}
+	}
+
+	button:hover {
+		background-color: #fff;
+		border: 1px solid #FFCC33;
+	}
+
+	h5 {
+		width: 144px;
+		height: 20px;
+
+		@include fonts(16px, 600, 20px);
+		color: #FFCC33;
+		margin-top: 14px;
+	}
+
+}
