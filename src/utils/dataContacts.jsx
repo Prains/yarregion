@@ -1,7 +1,7 @@
 import {
   small,
   big,
-} from "../components/Mainpage/Contacts/ContactItem/ContactItem.module.scss";
+} from "../components/ContactsPage/Contacts/ContactItem/ContactItem.module.scss";
 export const dataContacts = [
   {
     name: "Пичугина Екатерина Игоревна",
