@@ -1,0 +1,40 @@
+.aboutPage {
+	font-family: Montserrat;
+	padding: 0px 50px ;
+	section{
+		margin-bottom: 100px;
+	}
+	h2 {
+	
+		font-size: 36px;
+		font-weight: 700;
+		line-height: 44px;
+		text-align: left;
+		margin-bottom: 48px;
+	}
+	h3 {
+		font-size: 20px;
+		font-weight: 700;
+		line-height: 24px;
+		text-align: left;
+	}
+	p{
+		margin: 22px 0px;
+	}
+	ol{
+		list-style-position:inside;
+		list-style-type:decimal;
+	}
+	ul{
+		padding-left: 100px;
+		list-style: outside;
+		list-style-type: circle;
+	}
+	li{
+		margin: 22px 0px;
+	}
+	.innerOl{
+		list-style: none;
+	}
+}
+
