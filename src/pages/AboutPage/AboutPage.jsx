@@ -1,8 +1,10 @@
 import styles from "./AboutPage.module.scss";
-
+import Header from "../../components/Header/Header";
 function AboutPage() {
 	return (
-		<div className={styles.aboutPage}>
+		<div>
+			<Header/>
+			<div className={styles.aboutPage}>
 			<section>
 				<h2>О нас</h2>
 				<p>
@@ -312,6 +314,7 @@ function AboutPage() {
 					</li>
 				</ol>
 			</section>
+		</div>
 		</div>
 	);
 }
